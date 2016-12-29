@@ -7,6 +7,10 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>CMU Bhangra - Carnegie Mellon University Bhangra</title>
 
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
     <link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -41,7 +45,7 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="team.html" role="button" aria-expanded="false">TEAM 
+                <a class="dropdown-toggle" data-toggle="dropdown" href="team.html" role="button" aria-expanded="false">TEAM
                 <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <li role="presentation"><a role="menuitem" tabindex="-1" href="team.html">CURRENT</a></li>
@@ -49,7 +53,7 @@
                   </ul>
               </li>
               <li role="presentation" class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">MEDIA 
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">MEDIA
                 <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="performances.html">PERFORMANCES</a></li>
@@ -75,11 +79,66 @@
 
         <div class="col-md-8">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mMiiWLM7bZ4?autoplay=1"></iframe>
+            <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/mMiiWLM7bZ4?autoplay=1"></iframe>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 scrollable">
+          <section id="cd-timeline" class="cd-container">
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-picture">
+        				<img src="img/cd-icon-picture.svg" alt="Picture">
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Bhangra Blowout</h2>
+        				<p>First Place Performance. Best mix.</p>
+        				<a class="cd-read-more" onclick="changeSource('https://www.youtube.com/embed/IfdiFUj7_QQ')">Watch</a>
+        				<span class="cd-date">April 2016</span>
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+        		<div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-movie">
+        				<img src="img/cd-icon-movie.svg" alt="Movie">
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+                <h2>Bhangra Blowout</h2>
+        				<p>Third Place Performance at Washington DC.</p>
+        				<a class="cd-read-more" onclick="changeSource('https://www.youtube.com/embed/IfdiFUj7_QQ')">Watch</a>
+        				<span class="cd-date">May 2015</span>
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+        			<div class="cd-timeline-img cd-movie">
+        				<img src="img/cd-icon-movie.svg" alt="Movie">
+        			</div> <!-- cd-timeline-img -->
+
+        			<div class="cd-timeline-content">
+        				<h2>Bhangra in the Burgh</h2>
+        				<p>Performing in our hometown of Pittsburgh Pennsylvania</p>
+        				<a class="cd-read-more" onclick="changeSource('https://www.youtube.com/embed/qiReu8W0Se4')">Watch</a>
+        				<span class="cd-date">Nov 2014</span>
+        			</div> <!-- cd-timeline-content -->
+        		</div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img cd-movie">
+                <img src="img/cd-icon-movie.svg" alt="Movie">
+              </div> <!-- cd-timeline-img -->
+
+              <div class="cd-timeline-content">
+                <h2>Worlds Best Bhangra Crew</h2>
+                <p>Matchup against Cornell Bhangra in New Jersey</p>
+                <a class="cd-read-more" onclick="changeSource('https://www.youtube.com/embed/7phwMexNrfE')">Watch</a>
+                <span class="cd-date">April 2014</span>
+              </div> <!-- cd-timeline-content -->
+            </div> <!-- cd-timeline-block -->
+
+        	</section> <!-- cd-timeline -->
+
         </div>
 
       </div>
@@ -87,7 +146,7 @@
 
     <!-- Footer -->
     <section id="footer-sec" >
-             
+
             <div class="container">
            <div class="row  pad-bottom" >
             <div class="col-md-4 ">
@@ -99,9 +158,9 @@
                <div class="col-md-4 text-center icons">
                     <h4> <strong>SOCIAL LINKS</strong> </h4>
                    <p style="padding-top: 25px;">
-                        <a href="https://www.facebook.com/CMUBhangra"><img src="assets/img/facebook.svg"></a>  
-                        <a href="https://twitter.com/cmubhangra"><img src="assets/img/twitter.svg"></a>  
-                        <a href="https://www.youtube.com/user/CMUBhangra"><img src="assets/img/youtube.svg"></a>  
+                        <a href="https://www.facebook.com/CMUBhangra"><img src="assets/img/facebook.svg"></a>
+                        <a href="https://twitter.com/cmubhangra"><img src="assets/img/twitter.svg"></a>
+                        <a href="https://www.youtube.com/user/CMUBhangra"><img src="assets/img/youtube.svg"></a>
                         <a href="https://soundcloud.com/shreeps/sets/cmu-bhangra"><img src="assets/img/soundcloud.svg"></a>
                         <a href="https://instagram.com/cmubhangra/"><img src="assets/img/instagram.svg"></a>
 
@@ -118,7 +177,7 @@
                           <td>Email</td>
                           <td class="text-right">cmu.bhangra.team@gmail.com</td>
                         </tr>
-                        
+
                          <tr>
                           <td>Phone</td>
                           <td class="text-right">412 - 944 - 2620</td>
@@ -140,4 +199,9 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
+  <script type="text/javascript">
+  function changeSource(link) {
+    document.querySelector("#video").src = link;
+  }
+  </script>
 </html>
