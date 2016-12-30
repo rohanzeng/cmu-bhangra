@@ -25,8 +25,8 @@ body {
 .bg {
 	margin-top: -50px;
 	/* This image will be displayed fullscreen */
-	background:url('elite.jpg') no-repeat center center;
-	height: 1000px;
+	background:url('eliteclipped.jpg') no-repeat center center;
+	height: 750px;
 	/* Ensure the html element always takes up the full height of the browser window */
 	min-height:100%;
 
@@ -38,7 +38,7 @@ body {
 }
 
 .header {
-	color:white; 
+	color:white;
 	margin-top:50px
 }
 
