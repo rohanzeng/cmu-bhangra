@@ -5,7 +5,7 @@ Primary style
 -------------------------------- */
 .scrollable {
     height: 450px; /* or any value */
-    width: 450px;
+    width: auto;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -14,6 +14,7 @@ html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -498,4 +499,9 @@ header h1 {
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+
+.team-dancer {
+  font-size: 2px;
 }
